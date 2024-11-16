@@ -1,0 +1,73 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-image: url('ruben-garcia.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+  }
+  canvas {
+    border: 2px solid rgba(232, 0, 0, 0.8);
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.5);
+    /* Set the width and height to half the actual size so it doesn't look pixelated */
+    width: 800px;
+    height: 500px;
+    background: white;
+  }
+  canvas.shake {
+    animation: shake 0.5s linear 1;
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+  .myButton {
+    background-color: #ff0000; /* Bright red background */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for better size */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.myButton:hover {
+      background-color: #c70000; /* Darker red on hover */
+      transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.aboutButton{
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+.aboutButton:hover{
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.myButton:active {
+      transform: scale(0.95); /* Slightly shrink on click */
+  } 
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
