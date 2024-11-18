@@ -87,6 +87,8 @@ window.addEventListener('keydown',handlekey);
 const about = document.querySelector('.aboutButton');
 about.addEventListener('click', ()=>{
     alert(`Etch a sketch project from the Wes Bos' Beginner JavaScript course. 
-This exercise was part of module 6.
-Background image from Ruben Garcia via unsplash.com in agreement with licensing.`);
+This exercise was part of module 6 from the course.
+Background image from Ruben Garcia via unsplash.com in agreement with licensing.
+Currently only available on desktop devices.
+Beginning point on canvas is selected randomly per exercise instructions.`);
 })
